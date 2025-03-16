@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 15 Mar 2025, 21:12:49
+-- Üretim Zamanı: 17 Mar 2025, 00:56:53
 -- Sunucu sürümü: 10.4.27-MariaDB
 -- PHP Sürümü: 7.4.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Veritabanı: `dijitalurun`
+-- Veritabanı: `cakecafe`
 --
 
 -- --------------------------------------------------------
@@ -60,15 +60,26 @@ CREATE TABLE `ayarlar` (
   `site_gecerli_sms` int(11) DEFAULT NULL,
   `smsbildirim` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1 aktif 2 pasif',
   `mailbildirim` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1 aktif 2 pasif',
-  `adres1` text DEFAULT NULL,
-  `adres2` text DEFAULT NULL,
-  `adres3` text DEFAULT NULL,
+  `adresbaslik1` text DEFAULT NULL,
+  `adresbaslik2` text DEFAULT NULL,
+  `adresbaslik3` text DEFAULT NULL,
+  `adresdetay1` text DEFAULT NULL,
+  `adresdetay2` text DEFAULT NULL,
+  `adresdetay3` text DEFAULT NULL,
   `tel1` varchar(300) DEFAULT NULL,
   `tel2` varchar(300) DEFAULT NULL,
   `tel3` varchar(300) DEFAULT NULL,
   `whatsapp` varchar(300) DEFAULT NULL,
   `mail` varchar(300) DEFAULT NULL,
-  `sabitresim` varchar(300) DEFAULT NULL,
+  `sabitresim1` varchar(300) DEFAULT NULL,
+  `sabitresim2` varchar(300) DEFAULT NULL,
+  `kucukresim1` varchar(300) DEFAULT NULL,
+  `kucukresim2` varchar(300) DEFAULT NULL,
+  `kucukresim3` varchar(300) DEFAULT NULL,
+  `kucukresim4` varchar(300) DEFAULT NULL,
+  `kucukresim5` varchar(300) DEFAULT NULL,
+  `kucukresim6` varchar(300) DEFAULT NULL,
+  `footersabitresim` varchar(300) DEFAULT NULL,
   `sabityazi1` text DEFAULT NULL,
   `sabityazi2` text DEFAULT NULL,
   `sabitbuton1` varchar(300) DEFAULT NULL,
@@ -79,8 +90,8 @@ CREATE TABLE `ayarlar` (
 -- Tablo döküm verisi `ayarlar`
 --
 
-INSERT INTO `ayarlar` (`id`, `site_baslik`, `site_url`, `site_admin_url`, `site_logo`, `site_favicon`, `site_footer`, `site_gecerli_smtp`, `site_gecerli_pos`, `site_gecerli_sms`, `smsbildirim`, `mailbildirim`, `adres1`, `adres2`, `adres3`, `tel1`, `tel2`, `tel3`, `whatsapp`, `mail`, `sabitresim`, `sabityazi1`, `sabityazi2`, `sabitbuton1`, `sabitbuton2`) VALUES
-(1, 'Cake Cafe', 'http://localhost/dijitalurun', 'http://localhost/dijitalurun/admincp', 'logo.png', 'fav.png', 'Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class=\"fa fa-heart\" aria-hidden=\"true\"></i> by <a href=\"https://github.com/HsynBrnQuenjou\" target=\"_blank\">HsynBrn_Quenjou</a>', 1, 2, 3, 1, 1, '795 W 5th St, San Bernardino, CA 92410, USA\n\n', '639 S Spring St, Los Angeles, CA 90014, USA\n\n', '1000 Lakepoint Dr, Frisco, CO 80443, USA\n\n', '+1 800-786-1000', '+1 213-612-3000\n\n', '+1 800-786-1001', '+90 545 399 29 46', 'info@dijitalurun.com', '2.png', '<h2>1Making your life sweeter one bite at a time!</h2>', '<h2>2Making your life sweeter one bite at a time!</h2>', '<a href=\"#\" class=\"primary-btn\">1Our cakes</a>', '<a href=\"#\" class=\"primary-btn\">2Our cakes</a>');
+INSERT INTO `ayarlar` (`id`, `site_baslik`, `site_url`, `site_admin_url`, `site_logo`, `site_favicon`, `site_footer`, `site_gecerli_smtp`, `site_gecerli_pos`, `site_gecerli_sms`, `smsbildirim`, `mailbildirim`, `adresbaslik1`, `adresbaslik2`, `adresbaslik3`, `adresdetay1`, `adresdetay2`, `adresdetay3`, `tel1`, `tel2`, `tel3`, `whatsapp`, `mail`, `sabitresim1`, `sabitresim2`, `kucukresim1`, `kucukresim2`, `kucukresim3`, `kucukresim4`, `kucukresim5`, `kucukresim6`, `footersabitresim`, `sabityazi1`, `sabityazi2`, `sabitbuton1`, `sabitbuton2`) VALUES
+(1, 'Cake Cafe', 'http://localhost/cakecafe', 'http://localhost/cakecafe/admincp', 'logo.png', 'fav.png', 'Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class=\"fa fa-heart\" aria-hidden=\"true\"></i> by <a href=\"https://github.com/HsynBrnQuenjou\" target=\"_blank\">HsynBrn_Quenjou</a>', 1, 2, 3, 1, 1, 'san bernardino\n\n', 'Los angeles\n\n', 'san bernardino\n\n', '795 W 5th St, San Bernardino, CA 92410, USA', '639 S Spring St, Los Angeles, CA 90014, USA', '1000 Lakepoint Dr, Frisco, CO 80443, USA', '+1 800-786-1000', '+1 213-612-3000\n\n', '+1 800-786-1001', '+90 545 399 29 46', 'info@cakecafe.com', 'hero-1.jpg', 'hero-1.jpg', 'instagram-1.jpg', 'instagram-2.jpg', 'instagram-3.jpg', 'instagram-4.jpg', 'instagram-5.jpg', 'instagram-6.jpg', 'footer-bg.jpg', '<h2>1Making your life sweeter one bite at a time!</h2>', '<h2>2Making your life sweeter one bite at a time!</h2>', '<a href=\"#\" class=\"primary-btn\">1Our cakes</a>', '<a href=\"#\" class=\"primary-btn\">2Our cakes</a>');
 
 -- --------------------------------------------------------
 
@@ -135,6 +146,34 @@ INSERT INTO `blog` (`blogid`, `blogbaslik`, `blogsef`, `blogkisa`, `blogicerik`,
 (2, 'Deneme Blog 2', 'deneme-blog-2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n', '1.png', '1.png', 1, '2024-02-08 11:45:00', 'admin', 0),
 (3, 'Deneme Blog 3', 'deneme-blog-3', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n', '1.png', '1.png', 1, '2024-02-08 11:45:00', 'admin', 3),
 (4, 'Deneme Blog 4', 'deneme-blog-4', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s', '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. \n</p>\n\n<p>\nIt was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown \n</p>\n\n<p>\nprinter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\n', '1.png', '2.png', 1, '2024-02-08 11:45:00', 'admin', 6);
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `calisanlar`
+--
+
+CREATE TABLE `calisanlar` (
+  `calisan_id` int(11) NOT NULL,
+  `calisan_adi` varchar(300) DEFAULT NULL,
+  `calisan_gorevi` varchar(300) DEFAULT NULL,
+  `calisan_soyadi` varchar(300) DEFAULT NULL,
+  `calisan_tel` varchar(300) DEFAULT NULL,
+  `calisan_mail` varchar(300) DEFAULT NULL,
+  `calisan_tarih` timestamp NOT NULL DEFAULT current_timestamp(),
+  `calisan_durum` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1 aktif 2 pasif',
+  `calisan_foto` varchar(300) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Tablo döküm verisi `calisanlar`
+--
+
+INSERT INTO `calisanlar` (`calisan_id`, `calisan_adi`, `calisan_gorevi`, `calisan_soyadi`, `calisan_tel`, `calisan_mail`, `calisan_tarih`, `calisan_durum`, `calisan_foto`) VALUES
+(2, 'Ayşe', 'Pasta Şefi', 'Yılmaz', '5551234567', 'Sweetcake@support.com', '2025-03-16 00:42:57', 1, 'team-2.jpg'),
+(1, 'Mehmet', 'Pasta Şefi', 'Demir', '5329876543', 'Sweetcake@support.com', '2025-03-16 00:42:57', 1, 'team-1.jpg'),
+(3, 'Ahmet', 'Pasta Şefi', 'Şahin', '5052468101', 'Sweetcake@support.com', '2025-03-16 00:42:57', 1, 'team-3.jpg'),
+(4, 'Murat', 'Pasta Şefi', 'Kaya', '5447890123', 'Sweetcake@support.com', '2025-03-16 00:42:57', 1, 'team-4.jpg');
 
 -- --------------------------------------------------------
 
@@ -342,8 +381,8 @@ CREATE TABLE `sosyalmedyalar` (
 INSERT INTO `sosyalmedyalar` (`sosid`, `sosikon`, `sosbaslik`, `soslink`, `sostarih`, `sosekleyen`, `sosdurum`) VALUES
 (1, '<i class=\"fab fa-facebook-f\" aria-hidden=\"true\"></i>', 'Facebook', 'https://facebook.com', '2024-02-08 12:26:19', 'admin', 1),
 (2, '<i class=\"fab fa-twitter\" aria-hidden=\"true\"></i>', 'X', 'https://x.com', '2024-02-08 12:26:19', 'admin', 1),
-(3, '<i class=\"fab fa-google-plus-g\" aria-hidden=\"true\"></i>', 'Google', 'https://google.com', '2024-02-08 12:26:19', 'admin', 1),
-(4, '<i class=\"fab fa-instagram\" aria-hidden=\"true\"></i>', 'Instagram', 'https://instagram.com', '2024-02-08 12:26:19', 'admin', 1);
+(4, '<i class=\"fab fa-youtube\" aria-hidden=\"true\"></i>', 'Youtube', 'https://youtube.com', '2025-03-16 01:31:20', 'admin', 1),
+(3, '<i class=\"fab fa-instagram\" aria-hidden=\"true\"></i>', 'Instagram', 'https://instagram.com', '2024-02-08 12:26:19', 'admin', 1);
 
 -- --------------------------------------------------------
 
@@ -501,6 +540,12 @@ ALTER TABLE `blog`
   ADD PRIMARY KEY (`blogid`);
 
 --
+-- Tablo için indeksler `calisanlar`
+--
+ALTER TABLE `calisanlar`
+  ADD PRIMARY KEY (`calisan_id`);
+
+--
 -- Tablo için indeksler `kategoriler`
 --
 ALTER TABLE `kategoriler`
@@ -617,6 +662,12 @@ ALTER TABLE `bankalar`
 --
 ALTER TABLE `blog`
   MODIFY `blogid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- Tablo için AUTO_INCREMENT değeri `calisanlar`
+--
+ALTER TABLE `calisanlar`
+  MODIFY `calisan_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `kategoriler`
