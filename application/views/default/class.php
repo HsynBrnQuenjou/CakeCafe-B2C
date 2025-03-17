@@ -101,10 +101,10 @@
                                     <li><a href="checkout.php">Check Out</a></li>
                                     <li><a href="wisslist.php">Wisslist</a></li>
                                     <li><a href="class.php">Class</a></li>
-                                    <li><a href="blog-details.php">Blog Details</a></li>
+                                    <li><a href="blog_details_view.php">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="blog.php">Blog</a></li>
+                            <li><a href="blog_view.php">Blog</a></li>
                             <li><a href="contact_view.php">Contact</a></li>
                         </ul>
                     </nav>

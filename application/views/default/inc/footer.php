@@ -15,7 +15,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="footer__about">
                     <div class="footer__logo">
-                        <a href="#"><img src="default/uploads/img/footer-logo.png" alt=""></a>
+                        <a href="<?php echo base_url()?>"><img src="<?php echo base_url('default/uploads/img/'.$setting->footerlogo)?>" alt="<?php echo $setting->footerlogo?>"></a>
                     </div>
                     <p>Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore dolore magna aliqua.</p>

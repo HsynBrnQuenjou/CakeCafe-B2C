@@ -2433,7 +2433,7 @@ ol {
   position: relative;
 }
 .blog__item__pic .blog__pic__inner ul li span {
-  color: #111111;
+  color: red
 }
 .blog__item__pic .blog__pic__inner ul li:after {
   position: absolute;

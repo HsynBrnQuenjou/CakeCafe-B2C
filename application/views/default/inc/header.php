@@ -133,18 +133,18 @@
                         <li class="<?php if ($current_path == '/') echo 'active'; ?>"><a href="<?php echo base_url(); ?>">Anasayfa</a></li>
                         <li class="<?php if ($current_path == 'pages/about' || $current_path == '/about/') echo 'active'; ?>"><a href="<?php echo base_url('pages/about'); ?>">Hakkımızda</a></li>
                         <li class="<?php if (strpos($current_path, '/shop.php') !== false) echo 'active'; ?>"><a href="../shop.php">Ürünlerimiz</a></li>
-                        <li class="<?php if (strpos($current_path, '/blog.php') !== false || strpos($current_path, '/shoping-cart.php') !== false || strpos($current_path, '/checkout.php') !== false || strpos($current_path, '/wisslist.php') !== false || strpos($current_path, '/Class.html') !== false || strpos($current_path, '/blog-details.php') !== false) echo 'active'; ?>">
+                        <li class="<?php if (strpos($current_path, '/blog_view.php') !== false || strpos($current_path, '/shoping-cart.php') !== false || strpos($current_path, '/checkout.php') !== false || strpos($current_path, '/wisslist.php') !== false || strpos($current_path, '/Class.html') !== false || strpos($current_path, '/blog_details_view.php') !== false) echo 'active'; ?>">
                             <a href="#">Pages</a>
                             <ul class="dropdown">
-                                <li><a href="./blog.php" class="<?php if (strpos($current_path, '/blog.php') !== false) echo 'active'; ?>">Shop Details</a></li>
+                                <li><a href="./blog.php" class="<?php if (strpos($current_path, '/blog_view.php') !== false) echo 'active'; ?>">Shop Details</a></li>
                                 <li><a href="../shoping-cart.php" class="<?php if (strpos($current_path, '/shoping-cart.php') !== false) echo 'active'; ?>">Shoping Cart</a></li>
                                 <li><a href="../checkout.php" class="<?php if (strpos($current_path, '/checkout.php') !== false) echo 'active'; ?>">Check Out</a></li>
                                 <li><a href="../wisslist.php" class="<?php if (strpos($current_path, '/wisslist.php') !== false) echo 'active'; ?>">Wisslist</a></li>
                                 <li><a href="../Class.html" class="<?php if (strpos($current_path, '/Class.html') !== false) echo 'active'; ?>">Class</a></li>
-                                <li><a href="../blog-details.php" class="<?php if (strpos($current_path, '/blog-details.php') !== false) echo 'active'; ?>">Blog Details</a></li>
+                                <li class="<?php if (strpos($current_path, '/pages/blog_details') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/blog_details'); ?>">Blog detail</a></li>
                             </ul>
                         </li>
-                        <li class="<?php if (strpos($current_path, '/blog') !== false) echo 'active'; ?>"><a href="#">Blog</a></li>
+                        <li class="<?php if (strpos($current_path, '/pages/blog') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/blog'); ?>">Blog</a></li>
                         <li class="<?php if (strpos($current_path, '/pages/contact') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/contact'); ?>">İletişim</a></li>
                     </ul>
                 </nav>
