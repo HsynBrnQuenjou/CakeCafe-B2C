@@ -112,54 +112,38 @@
         <div class="container">
             <?php if ($products  && !empty($products)) { ?>
             <div class="row">
-
-                <?php
-
-                        foreach ($products as $pro) {
-                            ?>
-
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="default/uploads/img/shop/product-1.jpg" alt="">
-                                        <div class="product__label">
-                                            <span>Cupcake</span>
-                                        </div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6><a href="#"><?php echo $pro->urun_adi; ?></a></h6>
-                                        <div class="product__item__price"><?php echo $pro->urun_fiyat; ?>$</div>
-                                        <div class="cart_add">
-                                            <a href="#">Sepete ekle</a>
-                                        </div>
-                                    </div>
-                                </div>
+            <?php foreach ($products as $pro){ ?>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <a href="<?php echo base_url('pages/product_details'); ?>">
+                        <div  class="product__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/shop/'.$pro->urun_resim); ?>" alt="<?php echo $pro->urun_adi; ?>">
+                            <div class="product__label">
+                                <span><?php echo $pro->urun_kategori; ?></span>
                             </div>
-
-                            <?php
-                        }
-
-                ?>
-
-
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12 text-center"><!-- style="background: #f08632; color:white" -->
-                    <a class="product-btn" href="#">Tüm Ürünlerimiz</a>
-                </div>
-            </div>
-            <?php } else { ?>
-                <section class="testimonial spad">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <p>Henüz ürün bulunmamaktadır.</p>
+                        </div>
+                        </a>
+                        <div class="product__item__text">
+                            <h6><a href="<?php echo base_url('pages/product_details/'.$pro->urun_sef); ?>"><?php echo $pro->urun_adi; ?></a></h6>
+                            <div class="product__item__price"><?php echo $pro->urun_fiyat ?>₺</div>
+                            <div class="cart_add">
+                                <a href="#">Sepete Ekle</a>
                             </div>
                         </div>
                     </div>
-                </section>
-            <?php } ?>
-
+                    <?php } ?>
+                </div>
+                <?php } else { ?>
+                    <section class="testimonial spad">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <p>Henüz ürün bulunmamaktadır.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <?php } ?>
+            </div>
         </div>
     </section>
     <!-- Product Section End -->

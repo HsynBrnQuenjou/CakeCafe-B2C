@@ -53,6 +53,12 @@ class Common_model extends CI_Model {
             ->result();
     }
 
+    // Common_model.php (veya ilgili model dosyanız)
+    public function get_products_by_category($category_name) {
+        $this->db->where('urun_kategori', $category_name);
+        return $this->db->get('urunler')->result();
+    }
+
 }
 
 ?>

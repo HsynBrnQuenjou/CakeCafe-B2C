@@ -96,7 +96,7 @@
                             <li class="active"><a href="shop_view.php">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
-                                    <li><a href="shop-details.php">Shop Details</a></li>
+                                    <li><a href="product_details_view.php">Shop Details</a></li>
                                     <li><a href="shoping-cart.php">Shoping Cart</a></li>
                                     <li><a href="checkout.php">Check Out</a></li>
                                     <li><a href="wisslist.php">Wisslist</a></li>
