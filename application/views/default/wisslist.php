@@ -93,7 +93,7 @@
                         <ul>
                             <li><a href="index.php">Home</a></li>
                             <li><a href="about_view.php">About</a></li>
-                            <li class="active"><a href="shop.php">Shop</a></li>
+                            <li class="active"><a href="shop_view.php">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
                                     <li><a href="shop-details.php">Shop Details</a></li>

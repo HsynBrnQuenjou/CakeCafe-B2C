@@ -93,7 +93,7 @@
                         <ul>
                             <li><a href="index.php">Home</a></li>
                             <li><a href="about_view.php">About</a></li>
-                            <li class="active"><a href="shop.php">Shop</a></li>
+                            <li class="active"><a href="shop_view.php">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
                                     <li><a href="shop-details.php">Shop Details</a></li>
@@ -126,7 +126,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="breadcrumb__links">
                         <a href="index.php">Home</a>
-                        <a href="shop.php">Shop</a>
+                        <a href="shop_view.php">Shop</a>
                         <span>Sweet autumn leaves</span>
                     </div>
                 </div>
