@@ -218,13 +218,13 @@
                                     <span><?php echo $com->yorumuyeyer; ?></span>
                                 </div>
                             </div>
-                            <!-- <div class="rating">
+                            <div class="rating">
                                 <span class="icon_star"></span>
                                 <span class="icon_star"></span>
                                 <span class="icon_star"></span>
                                 <span class="icon_star"></span>
                                 <span class="icon_star-half_alt"></span>
-                            </div> -->
+                            </div>
                             <p><?php echo $com->yorumicerik; ?></p>
                         </div>
                     </div>
