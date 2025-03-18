@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about__video set-bg" src="default/uploads/img/about-video.jpg">
-                        <a href="https://www.youtube.com/watch?v=8PJ3_p7VqHw&list=RD8PJ3_p7VqHw&start_radio=1"
+                        <a href="https://www.youtube.com/watch?v=ad5_MXzibSM&start_radio=1"
                         class="play-btn video-popup"><i class="fa fa-play"></i></a>
                     </div>
                 </div>

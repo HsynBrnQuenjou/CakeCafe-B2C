@@ -74,7 +74,7 @@
                                 <div class="product__details__option">
                                     <div class="quantity">
                                         <div class="pro-qty">
-                                            <input type="text" value="2">
+                                            <input type="text" value="1">
                                         </div>
                                     </div>
                                     <a href="#" class="primary-btn">SEPETE EKLE</a>
@@ -139,8 +139,74 @@
 
 
     <!--    YAPAMADIM :/-->
+<!--    <section class="related-products spad">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-12 text-center">-->
+<!--                    <div class="section-title">-->
+<!--                        <h2>Related Products</h2>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="related__products__slider owl-carousel">-->
+<!--                    <div class="col-lg-3">-->
+<!--                        <div class="product__item">-->
+<!--                            <div class="product__item__pic set-bg" data-setbg="img/shop/product-1.jpg">-->
+<!--                                <div class="product__label">-->
+<!--                                    <span>Cupcake</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="product__item__text">-->
+<!--                                <h6><a href="#">Dozen Cupcakes</a></h6>-->
+<!--                                <div class="product__item__price">$32.00</div>-->
+<!--                                <div class="cart_add">-->
+<!--                                    <a href="#">Add to cart</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!-- Related Products Section Begin -->
+    <section class="related-products spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Related Products</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="related__products__slider owl-carousel">
+                    <?php foreach ($products as $catpro) { ?>
+                        <div class="col-lg-3">
+                            <div class="product__item">
+                                <a href="<?php echo base_url('pages/product_details/'.$catpro->urun_sef); ?>">
+                                    <div class="product__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/shop/'.$catpro->urun_resim); ?>">
+                                        <div class="product__label">
+                                            <span><?php echo $catpro->urun_kategori; ?></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product__item__text">
+                                    <h6><a href="<?php echo base_url('pages/product_details/'.$catpro->urun_sef); ?>"><?php echo $catpro->urun_adi; ?></a></h6>
+                                    <div class="product__item__price"><?php echo $catpro->urun_fiyat; ?>₺</div>
+                                    <div class="cart_add">
+                                        <a href="#">Sepete Ekle</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 </body>

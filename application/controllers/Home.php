@@ -25,8 +25,8 @@ class Home extends CI_Controller {
         //echo loc();
         $viewData = array(
             'setting' => $this->Common_model->get(['id'=>1],'ayarlar'),
-            'products' => $this->Common_model->getLimitAll(['urun_vitrin'=>1], 8, 0, 'urunler', 'urun_id', 'DESC' ), //videoda 9 adet var diye 9 yazdı
-            'categories' => $this->Common_model->getLimitAll(['katvitrin'=>1], 7, 0, 'kategoriler', 'katid', 'ASC' ),
+            'products' => $this->Common_model->getLimitAll(['urun_vitrin'=>1], 8, 0, 'urunler', 'urun_id', 'ASC' ), //videoda 9 adet var diye 9 yazdı
+            'categories' => $this->Common_model->getLimitAll(['katvitrin'=>1], 7, 0, 'kategoriler', 'katid', 'DESC' ),
             'comments' => $this->Common_model->getLimitAll(['yorumdurum'=>1], 8, 0, 'yorumlar', 'yorumid', 'DESC' ),
             //isimiz yok 'blogs' => $this->Common_model->getLimitAll(['blogdurum'=>1], 4, 0, 'blog', 'blogid', 'DESC' ), //videoda 3 adet var diye 3 yazıldı
 

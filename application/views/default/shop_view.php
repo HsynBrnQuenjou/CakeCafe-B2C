@@ -55,42 +55,79 @@
                     </div>
                 </div>
             </div>
+<!--            <div class="container">-->
+<!--                --><?php //if ($products  && !empty($products)) { ?>
+<!--                <div class="row">-->
+<!--                    --><?php //foreach ($products as $pro){ ?>
+<!--                    <div class="col-lg-3 col-md-6 col-sm-6">-->
+<!--                        <div class="product__item">-->
+<!--                            <a href="--><?php //echo base_url('pages/product_details'); ?><!--">-->
+<!--                                <div  class="product__item__pic set-bg" data-setbg="--><?php //echo base_url('default/uploads/img/shop/'.$pro->urun_resim); ?><!--" alt="--><?php //echo $pro->urun_adi; ?><!--">-->
+<!--                                    <div class="product__label">-->
+<!--                                        <span>--><?php //echo $pro->urun_kategori; ?><!--</span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                            <div class="product__item__text">-->
+<!--                                <h6><a href="--><?php //echo base_url('pages/product_details/'.$pro->urun_sef); ?><!--">--><?php //echo $pro->urun_adi; ?><!--</a></h6>-->
+<!--                                <div class="product__item__price">--><?php //echo $pro->urun_fiyat ?><!--₺</div>-->
+<!--                                <div class="cart_add">-->
+<!--                                    <a href="#">Sepete Ekle</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    --><?php //} ?>
+<!--                    </div>-->
+<!--                --><?php //} else { ?>
+<!--                    <section class="testimonial spad">-->
+<!--                        <div class="container">-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-lg-12 text-center">-->
+<!--                                    <p>Henüz ürün bulunmamaktadır.</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
+<!--                --><?php //} ?>
+<!--                </div>-->
+<!--            </div>-->
             <div class="container">
-                <?php if ($products  && !empty($products)) { ?>
-                <div class="row">
-                    <?php foreach ($products as $pro){ ?>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="product__item">
-                            <a href="<?php echo base_url('pages/product_details'); ?>">
-                                <div  class="product__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/shop/'.$pro->urun_resim); ?>" alt="<?php echo $pro->urun_adi; ?>">
-                                    <div class="product__label">
-                                        <span><?php echo $pro->urun_kategori; ?></span>
+                <?php if ($products && !empty($products)) { ?>
+                    <div class="row">
+                        <?php foreach ($products as $pro) { ?>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <a href="<?php echo base_url('pages/product_details/'.$pro->urun_sef); ?>">
+                                        <div class="product__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/shop/'.$pro->urun_resim); ?>">
+                                            <div class="product__label">
+                                                <span><?php echo $pro->urun_kategori; ?></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product__item__text">
+                                        <h6><a href="<?php echo base_url('pages/product_details/'.$pro->urun_sef); ?>"><?php echo $pro->urun_adi; ?></a></h6>
+                                        <div class="product__item__price"><?php echo $pro->urun_fiyat ?>₺</div>
+                                        <div class="cart_add">
+                                            <a href="#">Sepete Ekle</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </a>
-                            <div class="product__item__text">
-                                <h6><a href="<?php echo base_url('pages/product_details/'.$pro->urun_sef); ?>"><?php echo $pro->urun_adi; ?></a></h6>
-                                <div class="product__item__price"><?php echo $pro->urun_fiyat ?>₺</div>
-                                <div class="cart_add">
-                                    <a href="#">Sepete Ekle</a>
+                            </div>
+                        <?php } ?>
+                    </div>
+                <?php } else { ?>
+                    <section class="testimonial spad">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <p>Henüz ürün bulunmamaktadır.</p>
                                 </div>
                             </div>
                         </div>
-                        <?php } ?>
-                    </div>
-                    <?php } else { ?>
-                        <section class="testimonial spad">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12 text-center">
-                                        <p>Henüz ürün bulunmamaktadır.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    <?php } ?>
-                </div>
+                    </section>
+                <?php } ?>
             </div>
+
 
             <div class="shop__last__option">
                 <div class="row">
