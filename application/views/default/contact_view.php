@@ -108,7 +108,7 @@
                             <li>Mon-Fri: 5:00am to 9:00pm</li>
                             <li>Sat-Sun: 6:00am to 9:00pm</li>
                         </ul>
-                        <img src="img/cake-piece.png" alt="">
+                        <img src="default/uploads/img/cake-piece.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-8">

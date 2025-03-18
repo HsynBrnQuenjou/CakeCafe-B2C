@@ -779,17 +779,6 @@ ol {
   right: 0;
   top: -50px;
 }
-.class__video .play-btn {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  background: #f08632;
-  font-size: 24px;
-  color: #ffffff;
-  line-height: 70px;
-  text-align: center;
-  border-radius: 50%;
-}
 
 /*---------------------
   Team
@@ -1408,17 +1397,6 @@ ol {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 90px;
-}
-.about__video .play-btn {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  background: #f08632;
-  font-size: 24px;
-  color: #ffffff;
-  line-height: 70px;
-  text-align: center;
-  border-radius: 50%;
 }
 
 /*---------------------

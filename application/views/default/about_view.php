@@ -29,12 +29,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="about__video set-bg" src="default/uploads/img/about-video.jpg">
-                        <a href="https://www.youtube.com/watch?v=ad5_MXzibSM&start_radio=1"
-                        class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                    <div class="about__video">
+<!--                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/ad5_MXzibSM?si=dAqlbEvR0XBVBh5G"-->
+<!--                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
+<!--                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+                        <iframe width="1140" height="500" src="https://www.youtube.com/embed/ad5_MXzibSM?si=qbZQFGwlhXVL4rev"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <a href="https://www.youtube.com/embed/iGXTEmdi838?si=aL4kACTiB3fK3Kbp" class="play-btn video-popup">
+<!--                            <i class="fa fa-play"></i>-->
+                        </a>
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="about__text">
