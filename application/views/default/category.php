@@ -1,0 +1,5 @@
+<?php
+
+    /* KATEGORIYE GORE URUNLERI GÖSTERMEK ICIN */
+
+?>
