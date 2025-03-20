@@ -22,7 +22,7 @@
     <!-- Breadcrumb End -->"
 
     <!-- Blog Hero Begin -->
-    <div class="blog-hero set-bg" data-setbg="img/blog/details/blog-hero.jpg">
+    <div class="blog-hero set-bg" data-setbg="default/uploads/img/blog/details/blog-hero.jpg">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-7">

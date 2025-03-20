@@ -67,7 +67,7 @@
                         <ul>
 
                             <?php foreach ($pages as $page){ ?>
-                                <li><a href="<?php echo base_url($page->sayfasef); ?>"><?php echo $page->sayfaadi; ?></a></li>
+                                <li><a href="<?php echo base_url('pages/detail/'.$page->sayfasef); ?>"><?php echo $page->sayfaadi; ?></a></li>
                             <?php } ?>
 
 <!--                            <li><a href="#">Privacy Policy</a></li>-->
@@ -104,8 +104,8 @@
 <script src="<?php echo base_url();?>default/assets/js/owl.carousel.min.js"></script>
 <script src="<?php echo base_url();?>default/assets/js/jquery.nicescroll.min.js"></script>
 <script src="<?php echo base_url();?>default/assets/js/main.js"></script>
-<script src="<?php echo base_url();?>default/assets/js/custom.js"></script>
-<script src="<?php echo base_url();?>default/assets/sweetalert2.min.js"></script>
+<script src="<?php echo base_url();?>/default/assets/js/custom.js?v=<?php echo time();?>"></script>
+<script src="<?php echo base_url();?>/default/assets/sweetalert/sweetalert2.min.js"></script>
 </body>
 
 </html>

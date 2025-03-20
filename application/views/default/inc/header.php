@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="<?php echo base_url();?>default/assets/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url();?>default/assets/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url();?>default/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url();?>default/assets/sweetalert/sweetalert2.css">
+<!--DOMAINDEN SONRA KONTROL ET    <link rel="icon" href="--><?php //echo base_url('default/uploads/img/icon/'.$setting->site_favicon);?><!--" />-->
 <!--DOMAINDEN SONRA KONTROL ET    <link rel="icon" href="--><?php //echo base_url('default/uploads/img/icon/'.$setting->site_favicon);?><!--">-->
 </head>
 

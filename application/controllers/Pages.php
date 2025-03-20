@@ -17,6 +17,39 @@ class Pages extends CI_Controller{
         $this->load->view('default/contact_view', $viewData);
     }
 
+    public function  detail($id){
+
+//        echo $id;
+
+        if(!$id){
+             redirect(base_url());
+        }
+
+        $query = $this->Common_model->get(['sayfasef'=>$id, 'sayfadurum'=>1], 'sayfalar');
+        if($query){
+
+            $viewData = array(
+                "page" => $query,
+                "setting" => $this->Common_model->get(['id'=>1], 'ayarlar'),
+                'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar'),
+                'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
+            );
+
+            $this->load->view('default/page_details_view', $viewData);
+
+        }else{
+            redirect(base_url());
+        }
+
+    }
+
+    public function sendmessage(){
+
+        //BİR TÜRLÜ BECEREMEDIM PROJE BITIMI ILE BAKARIZ VIDEO 10-11-12
+
+    }
+
+
     public function  about(){
 
         $viewData = array(

@@ -113,20 +113,20 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="contact__form">
-                        <form action="#" id="contact-form" onsubmit="return false;">
+                        <form id="contact-form" onsubmit="return false;">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <input type="text" name="name" placeholder="ADINIZ-SOYADINIZ">
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" name="email" placeholder="E-MAIL">
+                                    <input type="email" name="email" placeholder="E-MAIL">
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="text" name="subject" placeholder="KONU">
                                 </div>
                                 <div class="col-lg-12">
-                                    <textarea placeholder="MESAJINIZ..."></textarea>
-                                    <button type="submit" onclick="sendmessage();" name="message" class="site-btn">MESAJ GÖNDERİN</button>
+                                    <textarea placeholder="MESAJINIZ..."></textarea> <!-- onclick="sendmessage();" BIR TURLU OLMADI VIDEO 10-11-12 -->
+                                    <button type="submit" name="message" class="site-btn">MESAJ GÖNDERİN</button>
                                 </div>
                             </div>
                         </form>
