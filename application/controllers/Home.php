@@ -25,7 +25,7 @@ class Home extends CI_Controller {
         //echo loc();
         $viewData = array(
             'setting' => $this->Common_model->get(['id'=>1],'ayarlar'),
-            'products' => $this->Common_model->getLimitAll(['urun_vitrin'=>1], 8, 0, 'urunler', 'urun_id', 'ASC' ), //videoda 9 adet var diye 9 yazdı
+            'products' => $this->Common_model->getLimitAll(['urun_durum', 'urun_vitrin'=>1], 8, 0, 'urunler', 'urun_id', 'ASC' ), //videoda 9 adet var diye 9 yazdı
             'categories' => $this->Common_model->getLimitAll(['katvitrin'=>1], 7, 0, 'kategoriler', 'katid', 'DESC' ),
             'comments' => $this->Common_model->getLimitAll(['yorumdurum'=>1], 8, 0, 'yorumlar', 'yorumid', 'DESC' ),
             //isimiz yok 'blogs' => $this->Common_model->getLimitAll(['blogdurum'=>1], 4, 0, 'blog', 'blogid', 'DESC' ), //videoda 3 adet var diye 3 yazıldı
@@ -34,6 +34,10 @@ class Home extends CI_Controller {
             //toplam urunler icin gerekli kod'productcount' => $this->Commmon_model->custom('SELECT count(*) as total FROM urunler WHERE urun_durum=1', false),
             //toplam siparissaysı icin gerekli kod 'ordercount' => $this->Commmon_model->custom('SELECT count(*) as total FROM siparisler', false),
             //toplam uyeler icin gerekli kod'usercount' => $this->Commmon_model->custom('SELECT count(*) as total FROM uyeler', false),
+
+            'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar', 'sosid', 'DESC'),
+            'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar', 'sayfaid', 'DESC'),
+            //POPULAR URUNLER ICIN GEREKLİ KISIM VIDEO 9 DK 27 CIVARI GECIYOR 'popproduct' => $this->Common_model->getLimitAll(['urun_durum', 'urun_vitrin'=>1], 8, 0, 'urunler', 'urun_goruntulenme', 'ASC' ), //videoda 9 adet var diye 9 yazdı
         );
 		$this->load->view('default/home_view', $viewData);
 

@@ -20,10 +20,21 @@
                     <p>Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore dolore magna aliqua.</p>
                     <div class="footer__social">
-                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.x.com/"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>
+<!--                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>-->
+<!--                        <a href="https://www.x.com/"><i class="fa fa-twitter"></i></a>-->
+<!--                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>-->
+<!--                        <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>-->
+
+                        <?php if($social) {
+                            foreach ($social as $soc){
+                                ?>
+                                <a target="_blank" href="<?php echo $soc->soslink; ?>"><?php echo $soc->sosikon; ?></a>
+                                <?php
+                            }
+                        }
+
+                        ?>
+
                     </div>
                 </div>
             </div>
@@ -42,7 +53,7 @@
     <div class="copyright">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-md-8">
                     <p class="copyright__text text-white"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://github.com/HsynBrnQuenjou" target="_blank">HsynBrn_Quenjou</a> -->
 
@@ -50,13 +61,20 @@
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-md-4">
                     <div class="copyright__widget">
+                        <?php if($pages) { ?>
                         <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Site Map</a></li>
+
+                            <?php foreach ($pages as $page){ ?>
+                                <li><a href="<?php echo base_url($page->sayfasef); ?>"><?php echo $page->sayfaadi; ?></a></li>
+                            <?php } ?>
+
+<!--                            <li><a href="#">Privacy Policy</a></li>-->
+<!--                            <li><a href="#">Terms & Conditions</a></li>-->
+<!--                            <li><a href="#">Site Map</a></li>-->
                         </ul>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -86,6 +104,8 @@
 <script src="<?php echo base_url();?>default/assets/js/owl.carousel.min.js"></script>
 <script src="<?php echo base_url();?>default/assets/js/jquery.nicescroll.min.js"></script>
 <script src="<?php echo base_url();?>default/assets/js/main.js"></script>
+<script src="<?php echo base_url();?>default/assets/js/custom.js"></script>
+<script src="<?php echo base_url();?>default/assets/sweetalert2.min.js"></script>
 </body>
 
 </html>

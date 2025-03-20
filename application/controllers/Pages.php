@@ -129,6 +129,7 @@ class Pages extends CI_Controller{
         $this->load->view('default/class_view', $viewData);
     }
 
+
 }
 
 

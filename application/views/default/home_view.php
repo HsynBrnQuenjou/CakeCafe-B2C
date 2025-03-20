@@ -3,25 +3,25 @@
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="<?php echo base_url('default/uploads/img/hero/'.$setting->sabitresim1); ?>">
+            <div class="hero__item set-bg" data-setbg="<?php echo base_url('default/uploads/img/hero/'.$setting->sliderresim1); ?>">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8">
                             <div class="hero__text">
-                                <?php echo $setting->sabityazi1; ?>
-                                <?php echo $setting->sabitbuton1; ?>
+                                <?php echo $setting->slideryazi1; ?>
+                                <?php echo $setting->sliderbuton1; ?>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hero__item set-bg" data-setbg="<?php echo base_url('default/uploads/img/hero/'.$setting->sabitresim2); ?>">
+            <div class="hero__item set-bg" data-setbg="<?php echo base_url('default/uploads/img/hero/'.$setting->sliderresim2); ?>">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8">
                             <div class="hero__text">
-                                <?php echo $setting->sabityazi2; ?>
-                                <?php echo $setting->sabitbuton2; ?>
+                                <?php echo $setting->slideryazi2; ?>
+                                <?php echo $setting->sliderbuton2; ?>
                             </div>
                         </div>
                     </div>
