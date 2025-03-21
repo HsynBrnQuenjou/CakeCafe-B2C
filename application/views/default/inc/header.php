@@ -56,7 +56,7 @@
     <div id="mobile-menu-wrap"></div>
     <div class="offcanvas__option">
         <ul>
-            <li><a href="#">Kayt Ol</a></li>
+            <li><a href="#">Kayıt Ol</a></li>
             <li><a href="#">Üye Girişi </a></li>
         </ul>
     </div>
