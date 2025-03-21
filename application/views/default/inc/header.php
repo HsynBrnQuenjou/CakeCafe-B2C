@@ -106,9 +106,9 @@
                         $current_path = str_replace($base_path, '/', $current_url);
                         ?>
                         <li class="<?php if ($current_path == '/') echo 'active'; ?>"><a href="<?php echo base_url(); ?>">Anasayfa</a></li>
-                        <li class="<?php if ($current_path == 'pages/about' || $current_path == '/about/') echo 'active'; ?>"><a href="<?php echo base_url('pages/about'); ?>">Hakkımızda</a></li>
+                        <li class="<?php if ($current_path == '/pages/about') echo 'active'; ?>"><a href="<?php echo base_url('pages/about'); ?>">Hakkımızda</a></li>
                         <li class="<?php if (strpos($current_path, '/pages/shop') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/shop'); ?>">Ürünlerimiz</a></li>
-                        <li class="<?php if (strpos($current_path, '/blog_view.php') !== false || strpos($current_path, '/shoping_cart_view.php') !== false || strpos($current_path, '/checkout_view.php') !== false || strpos($current_path, '/wishlist_view.php') !== false || strpos($current_path, '/Class.html') !== false || strpos($current_path, '/blog_details_view.php') !== false) echo 'active'; ?>">
+                        <li class="<?php if (strpos($current_path, '/pages/shoping_cart') !== false || strpos($current_path, '/pages/checkout') !== false || strpos($current_path, '/pages/wishlist') !== false || strpos($current_path, '/pages/courses') !== false || strpos($current_path, '/pages/blog_details') !== false) echo 'active'; ?>">
                             <a href="#">Pages</a>
                             <ul class="dropdown">
                                 <li class="<?php if (strpos($current_path, '/pages/shoping_cart') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/shoping_cart'); ?>">Shoping Cart</a></li>
