@@ -56,8 +56,24 @@
     <div id="mobile-menu-wrap"></div>
     <div class="offcanvas__option">
         <ul>
-            <li><a href="#">Sign in</a></li>
-            <li><a href="#">Sign out</a></li>
+            <li>USD <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
+            </li>
+            <li>ENG <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li>Spanish</li>
+                    <li>ENG</li>
+                </ul>
+            </li>
+            <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li>Spanish</li>
+                    <li>ENG</li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>
