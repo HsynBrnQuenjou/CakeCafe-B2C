@@ -43,10 +43,10 @@
     <div class="offcanvas__cart">
         <div class="offcanvas__cart__links">
             <a href="#" class="search-switch"><img src="assets/img/icon/search.png" alt=""></a>
-            <a href="#"><img src="assets/img/icon/heart.png" alt=""></a>
+            <a href="<?php echo base_url('pages/wishlist'); ?>"><img src="assets/img/icon/heart.png" alt=""></a>
         </div>
         <div class="offcanvas__cart__item">
-            <a href="#"><img src="assets/img/icon/cart.png" alt=""> <span>0</span></a>
+            <a href="<?php echo base_url('pages/shoping_cart'); ?>"><img src="assets/img/icon/cart.png" alt=""> <span>0</span></a>
             <div class="cart__price">Cart: <span>$0.00</span></div>
         </div>
     </div>
@@ -56,19 +56,8 @@
     <div id="mobile-menu-wrap"></div>
     <div class="offcanvas__option">
         <ul>
-            <li>USD <span class="arrow_carrot-down"></span>
-                <ul>
-                    <li>EUR</li>
-                    <li>USD</li>
-                </ul>
-            </li>
-            <li>ENG <span class="arrow_carrot-down"></span>
-                <ul>
-                    <li>Spanish</li>
-                    <li>ENG</li>
-                </ul>
-            </li>
-            <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Sign out</a></li>
         </ul>
     </div>
 </div>
@@ -136,13 +125,13 @@
                         <li class="<?php if ($current_path == '/') echo 'active'; ?>"><a href="<?php echo base_url(); ?>">Anasayfa</a></li>
                         <li class="<?php if ($current_path == 'pages/about' || $current_path == '/about/') echo 'active'; ?>"><a href="<?php echo base_url('pages/about'); ?>">Hakkımızda</a></li>
                         <li class="<?php if (strpos($current_path, '/pages/shop') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/shop'); ?>">Ürünlerimiz</a></li>
-                        <li class="<?php if (strpos($current_path, '/blog_view.php') !== false || strpos($current_path, '/shoping-cart.php') !== false || strpos($current_path, '/checkout.php') !== false || strpos($current_path, '/wisslist.php') !== false || strpos($current_path, '/Class.html') !== false || strpos($current_path, '/blog_details_view.php') !== false) echo 'active'; ?>">
+                        <li class="<?php if (strpos($current_path, '/blog_view.php') !== false || strpos($current_path, '/shoping_cart_view.php') !== false || strpos($current_path, '/checkout_view.php') !== false || strpos($current_path, '/wishlist_view.php') !== false || strpos($current_path, '/Class.html') !== false || strpos($current_path, '/blog_details_view.php') !== false) echo 'active'; ?>">
                             <a href="#">Pages</a>
                             <ul class="dropdown">
-                                <li><a href="../shoping-cart.php" class="<?php if (strpos($current_path, '/shoping-cart.php') !== false) echo 'active'; ?>">Shoping Cart</a></li>
-                                <li><a href="../checkout.php" class="<?php if (strpos($current_path, '/checkout.php') !== false) echo 'active'; ?>">Check Out</a></li>
-                                <li><a href="../wisslist.php" class="<?php if (strpos($current_path, '/wisslist.php') !== false) echo 'active'; ?>">Wisslist</a></li>
-                                <li class="<?php if (strpos($current_path, '/pages/class') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/class'); ?>">Kurslar</a></li>
+                                <li class="<?php if (strpos($current_path, '/pages/shoping_cart') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/shoping_cart'); ?>">Shoping Cart</a></li>
+                                <li class="<?php if (strpos($current_path, '/pages/checkout') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/checkout'); ?>">Kontrol</a></li>
+                                <li class="<?php if (strpos($current_path, '/pages/wishlist') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/wishlist'); ?>">İstek Listesi</a></li>
+                                <li class="<?php if (strpos($current_path, '/pages/courses') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/courses'); ?>">Kurslar</a></li>
                                 <li class="<?php if (strpos($current_path, '/pages/blog_details') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/blog_details'); ?>">Blog detail</a></li>
                             </ul>
                         </li>

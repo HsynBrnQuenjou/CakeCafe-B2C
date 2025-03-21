@@ -258,14 +258,14 @@
                             <span>Follow us on instagram</span>
                             <h2>Sweet moments are saved as memories.</h2>
                         </div>
-                        <h5><i class="fa fa-instagram"></i>@sweetcakecafe</h5>
+                        <h5><img src="<?php echo base_url('default/uploads/img/cake-piece.png'); ?>" alt="">&nbsp;<i class="fa fa-instagram"></i>@sweetcake</h5>
                     </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="instagram__pic">
-                                <img src="default/uploads/img/instagram/instagram-1.jpg" alt="<?php echo $setting->kucukresim1; ?>"> <!-- instagram-1.jpg -->
+                                <img src="<?php echo base_url('default/uploads/img/instagram/'.$setting->kucukresim1); ?>" alt="<?php echo $setting->kucukresim1; ?>"> <!-- instagram-1.jpg -->
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-6">

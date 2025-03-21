@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="breadcrumb__links">
-                        <a href="<?php echo base_url() ?>">Home</a>
+                        <a href="<?php echo base_url() ?>">Anasayfa</a>
                         <span><?php echo $page->sayfaadi; ?></span>
                     </div>
                 </div>
@@ -22,19 +22,18 @@
     <!-- Breadcrumb End -->"
 
     <!-- Blog Hero Begin -->
-    <div class="blog-hero set-bg" data-setbg="default/uploads/img/blog/details/blog-hero.jpg">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-7">
-                    <div class="blog__hero__text">
-                        <div class="label">Pages</div>
-                        <h2><?php echo $page->sayfaadi; ?></h2>
-                        <ul>
-                            <li>By <span>admin</span></li>
-                            <li>13 Nov 2020</li>
-                            <li>112 Views</li>
-                        </ul>
-                    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-7">
+                <div class="blog__hero__text">
+                    <div class="label">Pages</div>
+                    <h2><?php echo $page->sayfaadi; ?></h2>
+                    <ul>
+                        <li>By <span><?php echo $page->sayfaekleyen; ?></span></li>
+                        <li>Son Güncelleme Tarihi</li>
+                        <li><?php echo $page->sayfatarih; ?></li>
+
+                    </ul>
                 </div>
             </div>
         </div>

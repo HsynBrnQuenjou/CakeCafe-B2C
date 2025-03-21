@@ -8,13 +8,13 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="breadcrumb__text">
-                        <h2>Shop</h2>
+                        <h2>Ürünler</h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="breadcrumb__links">
-                        <a href="index.php">Home</a>
-                        <span>Shop</span>
+                        <a href="index.php">Anasayfa</a>
+                        <span>Ürünler</span>
                     </div>
                 </div>
             </div>

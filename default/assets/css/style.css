@@ -956,7 +956,9 @@ ol {
   position: absolute;
   left: 0;
   top: -34px;
-  background: url(default/uploads/img/instagram/cake-piece.png) no-repeat;
+  background-image: url("../img/instagram/cake-piece.png");
+  background-size: cover;
+  background-position: center;
   height: 139px;
   width: 114px;
   content: "";
@@ -1026,6 +1028,14 @@ ol {
   margin: 0 auto;
 }
 .map__inner h6 {
+  color: #111111;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.map__inner ul li:first-child{
+  list-style: none;
+  font-size: 14px;
   color: #111111;
   font-weight: 600;
   text-transform: uppercase;

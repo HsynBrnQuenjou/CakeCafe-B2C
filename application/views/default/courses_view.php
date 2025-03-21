@@ -30,7 +30,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="class__item">
-                                <div class="class__item__pic set-bg" data-setbg="img/class/class-1.jpg">
+                                <div class="class__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/class/class-1.jpg');?>">
                                     <div class="label">$35.00</div>
                                 </div>
                                 <div class="class__item__text">
@@ -43,7 +43,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="class__item">
-                                <div class="class__item__pic set-bg" data-setbg="img/class/class-2.jpg">
+                                <div class="class__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/class/class-2.jpg');?>">
                                     <div class="label">$35.00</div>
                                 </div>
                                 <div class="class__item__text">
@@ -56,7 +56,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="class__item">
-                                <div class="class__item__pic set-bg" data-setbg="img/class/class-3.jpg">
+                                <div class="class__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/class/class-3.jpg');?>">
                                     <div class="label">$35.00</div>
                                 </div>
                                 <div class="class__item__text">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="class__item">
-                                <div class="class__item__pic set-bg" data-setbg="img/class/class-4.jpg">
+                                <div class="class__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/class/class-4.jpg');?>">
                                     <div class="label">$35.00</div>
                                 </div>
                                 <div class="class__item__text">
@@ -82,7 +82,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="class__item">
-                                <div class="class__item__pic set-bg" data-setbg="img/class/class-5.jpg">
+                                <div class="class__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/class/class-5.jpg');?>">
                                     <div class="label">$35.00</div>
                                 </div>
                                 <div class="class__item__text">
@@ -95,7 +95,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="class__item">
-                                <div class="class__item__pic set-bg" data-setbg="img/class/class-6.jpg">
+                                <div class="class__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/class/class-6.jpg');?>">
                                     <div class="label">$35.00</div>
                                 </div>
                                 <div class="class__item__text">

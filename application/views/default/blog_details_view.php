@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="breadcrumb__links">
-                        <a href="<?php echo base_url() ?>">Home</a>
+                        <a href="<?php echo base_url() ?>">Anasayfa</a>
                         <span>Blog Details</span>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
     <!-- Breadcrumb End -->"
 
     <!-- Blog Hero Begin -->
-    <div class="blog-hero set-bg" data-setbg="default/uploads/img/blog/details/blog-hero.jpg">
+    <div class="blog-hero set-bg" data-setbg="<?php echo base_url('default/uploads/img/blog/details/blog-hero.jpg') ?>">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-7">
@@ -64,15 +64,15 @@
                         </div>
                         <div class="blog__details__recipe">
                             <div class="blog__details__recipe__item">
-                                <h6><img src="img/blog/details/user.png" alt=""> SERVES</h6>
+                                <h6><img src="<?php echo base_url('default/uploads/img/blog/details/user.png') ?>" alt=""> SERVES</h6>
                                 <span>2 as a main, 4 as a side</span>
                             </div>
                             <div class="blog__details__recipe__item">
-                                <h6><img src="img/blog/details/clock.png" alt=""> PREP TIME</h6>
+                                <h6><img src="<?php echo base_url('default/uploads/img/blog/details/clock.png') ?>" alt=""> PREP TIME</h6>
                                 <span>15 minute</span>
                             </div>
                             <div class="blog__details__recipe__item">
-                                <h6><img src="img/blog/details/clock.png" alt=""> COOK TIME</h6>
+                                <h6><img src="<?php echo base_url('default/uploads/img/blog/details/clock.png') ?>" alt=""> COOK TIME</h6>
                                 <span>15 minute</span>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="blog__details__ingredients__pic">
-                                        <img src="img/blog/details/blog-details.jpg" alt="">
+                                        <img src="<?php echo base_url('default/uploads/img/blog/details/blog-details.jpg') ?>" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@
                         </div>
                         <div class="blog__details__author">
                             <div class="blog__details__author__pic">
-                                <img src="img/blog/details/blog-author.jpg" alt="">
+                                <img src="<?php echo base_url('default/uploads/img/blog/details/blog-author.jpg');?>" alt="">
                             </div>
                             <div class="blog__details__author__text">
                                 <h6>Mitchell Holland</h6>
@@ -176,7 +176,7 @@
                             <a href="#" class="primary-btn">Leave a comment</a>
                             <div class="blog__details__comment__item">
                                 <div class="blog__details__comment__item__pic">
-                                    <img src="img/blog/details/comment-1.jpg" alt="">
+                                    <img src="<?php echo base_url('default/uploads/img/blog/details/comment-1.jpg');?>" alt="">
                                 </div>
                                 <div class="blog__details__comment__item__text">
                                     <h6>Dylan Stewart</h6>
@@ -191,7 +191,7 @@
                             </div>
                             <div class="blog__details__comment__item blog__details__comment__item--reply">
                                 <div class="blog__details__comment__item__pic">
-                                    <img src="img/blog/details/comment-2.jpg" alt="">
+                                    <img src="<?php echo base_url('default/uploads/img/blog/details/comment-2.jpg');?>" alt="">
                                 </div>
                                 <div class="blog__details__comment__item__text">
                                     <h6>Derrick Patrick</h6>
@@ -206,7 +206,7 @@
                             </div>
                             <div class="blog__details__comment__item">
                                 <div class="blog__details__comment__item__pic">
-                                    <img src="img/blog/details/comment-3.jpg" alt="">
+                                    <img src="<?php echo base_url('default/uploads/img/blog/details/comment-3.jpg');?>" alt="">
                                 </div>
                                 <div class="blog__details__comment__item__text">
                                     <h6>Michael Luna</h6>
@@ -225,6 +225,7 @@
             </div>
         </div>
     </section>
+    <!-- Blog Details Section End -->
 
 </body>
 

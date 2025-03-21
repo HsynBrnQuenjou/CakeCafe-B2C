@@ -105,7 +105,7 @@ class Pages extends CI_Controller{
         $viewData = array(
             'setting' => $this->Common_model->get(['id'=>1], 'ayarlar'),
             'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar'),
-            //'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
+            'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
             //'comments' => $this->Common_model->getLimitAll(['yorumdurum'=>1], 8, 0, 'yorumlar', 'yorumid', 'DESC' ),
             //'workers' => $this->Common_model->getLimitAll(['calisan_durum'=>1], 4, 0, 'calisanlar', 'calisan_id', 'DESC' ),
             //'popularblogs' => $this->Common_model->getLimitAll(['blogdurum'=>1], 5, 0, 'blog', 'bloggoruntulenme', 'DESC'),
@@ -130,8 +130,8 @@ class Pages extends CI_Controller{
 
         $viewData = array(
             'setting' => $this->Common_model->get(['id'=>1], 'ayarlar'),
-            //'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar'),
-            //'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
+            'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar'),
+            'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
             'comments' => $this->Common_model->getLimitAll(['yorumdurum'=>1], 8, 0, 'yorumlar', 'yorumid', 'DESC' ),
             //'workers' => $this->Common_model->getLimitAll(['calisan_durum'=>1], 4, 0, 'calisanlar', 'calisan_id', 'DESC' ),
             //'popularblogs' => $this->Common_model->getLimitAll(['blogdurum'=>1], 5, 0, 'blog', 'bloggoruntulenme', 'DESC'),
@@ -145,12 +145,12 @@ class Pages extends CI_Controller{
         $this->load->view('default/product_details_view', $viewData);
     }
 
-    public function  class(){
+    public function   courses(){
 
         $viewData = array(
             'setting' => $this->Common_model->get(['id'=>1], 'ayarlar'),
             'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar'),
-            //'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
+            'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
             //'comments' => $this->Common_model->getLimitAll(['yorumdurum'=>1], 8, 0, 'yorumlar', 'yorumid', 'DESC' ),
             //'workers' => $this->Common_model->getLimitAll(['calisan_durum'=>1], 4, 0, 'calisanlar', 'calisan_id', 'DESC' ),
             //'popularblogs' => $this->Common_model->getLimitAll(['blogdurum'=>1], 5, 0, 'blog', 'bloggoruntulenme', 'DESC'),
@@ -159,7 +159,39 @@ class Pages extends CI_Controller{
         );
 
 
-        $this->load->view('default/class_view', $viewData);
+        $this->load->view('default/courses_view', $viewData);
+    }
+
+    public function   checkout(){
+
+        $viewData = array(
+            'setting' => $this->Common_model->get(['id'=>1], 'ayarlar'),
+            'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar'),
+            'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
+        );
+        $this->load->view('default/checkout_view', $viewData);
+    }
+
+    public function   wishlist(){
+
+        $viewData = array(
+            'setting' => $this->Common_model->get(['id'=>1], 'ayarlar'),
+            'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar'),
+            'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
+            'products' => $this->Common_model->getLimitAll(['urun_vitrin'=>1], 8, 0, 'urunler', 'urun_id', 'DESC' ),
+        );
+        $this->load->view('default/wishlist_view', $viewData);
+    }
+
+    public function   shoping_cart(){
+
+        $viewData = array(
+            'setting' => $this->Common_model->get(['id'=>1], 'ayarlar'),
+            'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar'),
+            'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
+            'products' => $this->Common_model->getLimitAll(['urun_vitrin'=>1], 8, 0, 'urunler', 'urun_id', 'DESC' ),
+        );
+        $this->load->view('default/shoping_cart_view', $viewData);
     }
 
 
