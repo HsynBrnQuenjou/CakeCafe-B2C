@@ -1,7 +1,7 @@
 <?php $this->load->view('default/inc/header'); ?>
 
 <body>
-    "<!-- Breadcrumb Begin -->
+    <!-- Breadcrumb Begin -->
     <div class="breadcrumb-option">
         <div class="container">
             <div class="row">
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <!-- Breadcrumb End -->"
+    <!-- Breadcrumb End -->
 
     <!-- Blog Hero Begin -->
     <div class="blog-hero set-bg" data-setbg="<?php echo base_url('default/uploads/img/blog/details/blog-hero.jpg') ?>">

@@ -42,38 +42,22 @@
 <div class="offcanvas-menu-wrapper">
     <div class="offcanvas__cart">
         <div class="offcanvas__cart__links">
-            <a href="#" class="search-switch"><img src="assets/img/icon/search.png" alt=""></a>
-            <a href="<?php echo base_url('pages/wishlist'); ?>"><img src="assets/img/icon/heart.png" alt=""></a>
+            <a href="#" class="search-switch"><img src="default/uploads/img/icon/search.png" alt=""></a>
+            <a href="<?php echo base_url('pages/wishlist'); ?>"><img src="default/uploads/img/icon/heart.png" alt=""></a>
         </div>
         <div class="offcanvas__cart__item">
-            <a href="<?php echo base_url('pages/shoping_cart'); ?>"><img src="assets/img/icon/cart.png" alt=""> <span>0</span></a>
+            <a href="<?php echo base_url('pages/shoping_cart'); ?>"><img src="default/uploads/img/icon/cart.png" alt=""> <span>0</span></a>
             <div class="cart__price">Cart: <span>$0.00</span></div>
         </div>
     </div>
     <div class="offcanvas__logo">
-        <a href="./index.html"><img src=assets/"img/logo.png" alt=""></a>
+        <a href="./index.html"><img src="default/uploads/img/logo.png" alt=""></a>
     </div>
     <div id="mobile-menu-wrap"></div>
     <div class="offcanvas__option">
         <ul>
-            <li>USD <span class="arrow_carrot-down"></span>
-                <ul>
-                    <li>EUR</li>
-                    <li>USD</li>
-                </ul>
-            </li>
-            <li>ENG <span class="arrow_carrot-down"></span>
-                <ul>
-                    <li>Spanish</li>
-                    <li>ENG</li>
-                </ul>
-            </li>
-            <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span>
-                <ul>
-                    <li>Spanish</li>
-                    <li>ENG</li>
-                </ul>
-            </li>
+            <li><a href="#">Kayt Ol</a></li>
+            <li><a href="#">Üye Girişi </a></li>
         </ul>
     </div>
 </div>
@@ -86,39 +70,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="header__top__inner">
-                        <!-- GEREK YOK -->
                         <div class="header__top__left">
-                            <ul><!--
-                                <li>USD <span class="arrow_carrot-down"></span>
-                                    <ul>
-                                        <li>EUR</li>
-                                        <li>USD</li>
-                                    </ul>
-                                </li>
-                                <li>ENG <span class="arrow_carrot-down"></span>
-                                    <ul>
-                                        <li>Spanish</li>
-                                        <li>ENG</li>
-                                    </ul>
-                                </li> -->
-                                <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
+                            <ul>
+                                <li><a href="#">Kayt Ol</a></li>
+                                <li><a href="#">Üye Girişi </a></li>
                             </ul>
                         </div>
                         <div class="header__logo">
-                            <a href="<?php echo base_url(); ?>">
-                                <img src="<?php echo base_url('default/uploads/img/'.$setting->site_logo); ?>" alt="<?php echo $setting->site_baslik; ?>">
-                            </a> <!-- /assets/"img/logo.png -->
+                            <a href="./index.html"><img src="default/uploads/img/logo.png" alt=""></a>
                         </div>
-
-
-
                         <div class="header__top__right">
                             <div class="header__top__right__links">
-                                <a href="#" class="search-switch"><img src="<?php echo base_url('default/uploads/img/icon/search.png'); ?>" alt=""></a>
-                                <a href="#"><img src="<?php echo base_url('default/uploads/img/icon/heart.png'); ?>" alt=""></a>
+                                <a href="#" class="search-switch"><img src="default/uploads/img/icon/search.png" alt=""></a>
+                                <a href="<?php echo base_url('pages/wishlist'); ?>"><img src="default/uploads/img/icon/heart.png" alt=""></a>
                             </div>
-                            <div class="header__top__right__cart"  >
-                                <a href="shoping-cart.html"><img src="<?php echo base_url('default/uploads/img/icon/cart.png'); ?>" alt=""> <span>0</span></a>
+                            <div class="header__top__right__cart">
+                                <a href="<?php echo base_url('pages/shoping_cart'); ?>"><img src="default/uploads/img/icon/cart.png" alt=""> <span>0</span></a>
                                 <div class="cart__price">Cart: <span>$0.00</span></div>
                             </div>
                         </div>
@@ -154,7 +121,6 @@
                         <li class="<?php if (strpos($current_path, '/pages/blog') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/blog'); ?>">Blog</a></li>
                         <li class="<?php if (strpos($current_path, '/pages/contact') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/contact'); ?>">İletişim</a></li>
                     </ul>
-                </nav>
                 </nav>
             </div>
         </div>
