@@ -42,16 +42,16 @@
 <div class="offcanvas-menu-wrapper">
     <div class="offcanvas__cart">
         <div class="offcanvas__cart__links">
-            <a href="#" class="search-switch"><img src="default/uploads/img/icon/search.png" alt=""></a>
-            <a href="<?php echo base_url('pages/wishlist'); ?>"><img src="default/uploads/img/icon/heart.png" alt=""></a>
+            <a href="#" class="search-switch"><img src="<?php echo base_url('default/uploads/img/icon/search.png');?>" alt=""></a>
+            <a href="<?php echo base_url('pages/wishlist'); ?>"><img src="<?php echo base_url('default/uploads/img/icon/heart.png');?>" alt=""></a>
         </div>
         <div class="offcanvas__cart__item">
-            <a href="<?php echo base_url('pages/shoping_cart'); ?>"><img src="default/uploads/img/icon/cart.png" alt=""> <span>0</span></a>
+            <a href="<?php echo base_url('pages/shoping_cart'); ?>"><img src="<?php echo base_url('default/uploads/img/icon/cart.png');?>" alt=""> <span>0</span></a>
             <div class="cart__price">Cart: <span>$0.00</span></div>
         </div>
     </div>
     <div class="offcanvas__logo">
-        <a href="./index.html"><img src="default/uploads/img/logo.png" alt=""></a>
+        <a href="<?php echo base_url();?>"><img src="<?php echo base_url('default/uploads/img/logo.png');?>" alt=""></a>
     </div>
     <div id="mobile-menu-wrap"></div>
     <div class="offcanvas__option">
@@ -77,15 +77,15 @@
                             </ul>
                         </div>
                         <div class="header__logo">
-                            <a href="./index.html"><img src="default/uploads/img/logo.png" alt=""></a>
+                            <a href="<?php echo base_url();?>"><img src="<?php echo base_url('default/uploads/img/logo.png');?>" alt=""></a>
                         </div>
                         <div class="header__top__right">
                             <div class="header__top__right__links">
-                                <a href="#" class="search-switch"><img src="default/uploads/img/icon/search.png" alt=""></a>
-                                <a href="<?php echo base_url('pages/wishlist'); ?>"><img src="default/uploads/img/icon/heart.png" alt=""></a>
+                                <a href="#" class="search-switch"><img src="<?php echo base_url('default/uploads/img/icon/search.png');?>" alt=""></a>
+                                <a href="<?php echo base_url('pages/wishlist'); ?>"><img src="<?php echo base_url('default/uploads/img/icon/heart.png');?>" alt=""></a>
                             </div>
                             <div class="header__top__right__cart">
-                                <a href="<?php echo base_url('pages/shoping_cart'); ?>"><img src="default/uploads/img/icon/cart.png" alt=""> <span>0</span></a>
+                                <a href="<?php echo base_url('pages/shoping_cart'); ?>"><img src="<?php echo base_url('default/uploads/img/icon/cart.png');?>" alt=""> <span>0</span></a>
                                 <div class="cart__price">Cart: <span>$0.00</span></div>
                             </div>
                         </div>
