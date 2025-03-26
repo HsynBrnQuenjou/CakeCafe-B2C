@@ -28,9 +28,9 @@ class Category extends CI_Controller
                 'products' => $products,
 
                 'setting' => $this->Common_model->get(['id'=>1], 'ayarlar'),
-                'products' => $this->Common_model->getLimitAll(['urun_kategori'=>$catquery->katkodu, 'urun_durum'=>1], $perPage, $pkCount, 'urunler', 'urun_id', 'ASC' ),
-                'productcount' => $categorycount,
-                'productlinks' => $links,
+//                'products' => $this->Common_model->getLimitAll(['urun_kategori'=>$catquery->katkodu, 'urun_durum'=>1], $perPage, $pkCount, 'urunler', 'urun_id', 'ASC' ),
+//                'productcount' => $categorycount,
+//                'productlinks' => $links,
                 'cataname' => $catquery->katadi,
                 'categories' => $this->Common_model->getLimitAll(['katdurum'=>1], 7, 0, 'kategoriler', 'katid', 'DESC' ),
                 'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar', 'sosid', 'DESC'),
