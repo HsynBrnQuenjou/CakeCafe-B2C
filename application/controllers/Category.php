@@ -33,8 +33,8 @@ class Category extends CI_Controller
                 'productlinks' => $links,
                 'cataname' => $catquery->katadi,
                 'categories' => $this->Common_model->getLimitAll(['katdurum'=>1], 7, 0, 'kategoriler', 'katid', 'DESC' ),
-                'social' => $this->Common_model->get(['sosdurum'=>1], 'sosyalmedyalar'),
-                'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar'),
+                'social' => $this->Common_model->getAll(['sosdurum'=>1], 'sosyalmedyalar', 'sosid', 'DESC'),
+                'pages' => $this->Common_model->getAll(['sayfadurum'=>1], 'sayfalar', 'sayfaid', 'DESC'),
 
             );
 
