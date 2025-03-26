@@ -30,12 +30,23 @@
                     <div class="col-lg-7 col-md-7">
                         <div class="shop__option__search">
                             <form action="#">
-                                <select>
-                                    <option value="">Categories</option>
-                                    <option value="">Red Velvet</option>
-                                    <option value="">Cup Cake</option>
-                                    <option value="">Biscuit</option>
-                                </select>
+<!--                                <select>-->
+<!--                                    <option value="">Categories</option>-->
+<!--                                    <option value="">Red Velvet</option>-->
+<!--                                    <option value="">Cup Cake</option>-->
+<!--                                    <option value="">Biscuit</option>-->
+<!--                                </select>-->
+                                <?php if($categories){ ?>
+                                    <select name="search_term2" onchange="location = this.value;">
+                                        <option value="">Categories</option>
+                                        <?php foreach($categories as $cat){ ?>
+                                            <option value="<?php echo base_url('category/'.$cat->katsef); ?>">
+                                                <?php echo $cat->katadi; ?>
+                                            </option>
+                                        <?php } ?>
+                                    </select>
+                                <?php } ?>
+
                                 <input type="text" placeholder="Search">
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
@@ -97,7 +108,7 @@
                         <?php foreach ($products as $pro) { ?>
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <a href="<?php echo base_url('pages/product_details/'.$pro->urun_sef); ?>">
+                                    <a href="<?php echo base_url('products/'.$pro->urun_sef); ?>">
                                         <div class="product__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/shop/'.$pro->urun_resim); ?>">
                                             <div class="product__label">
                                                 <span><?php echo $pro->urun_kategori; ?></span>
@@ -105,7 +116,7 @@
                                         </div>
                                     </a>
                                     <div class="product__item__text">
-                                        <h6><a href="<?php echo base_url('pages/product_details/'.$pro->urun_sef); ?>"><?php echo $pro->urun_adi; ?></a></h6>
+                                        <h6><a href="<?php echo base_url('products/'.$pro->urun_sef); ?>"><?php echo $pro->urun_adi; ?></a></h6>
                                         <div class="product__item__price"><?php echo $pro->urun_fiyat ?>₺</div>
                                         <div class="cart_add">
                                             <a href="#">Sepete Ekle</a>

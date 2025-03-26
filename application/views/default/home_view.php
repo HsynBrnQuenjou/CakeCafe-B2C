@@ -38,31 +38,31 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="about__text">
                         <div class="section-title">
-                            <span>About Cake shop</span>
-                            <h2>Cakes and bakes from the house of Queens!</h2>
+                            <span>Pastanemiz</span>
+                            <h2>Lezzetin ve Ustalığın Buluşma Noktası!</h2>
                         </div>
-                        <p>The "Cake Shop" is a Jordanian Brand that started as a small family business. The owners are
-                        Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff of 80 employees.</p>
+                        <p>Geleneksel tarifleri modern lezzetlerle birleştirerek, damaklarda unutulmaz tatlar bırakıyoruz.
+                            "Tatlı Anların Adresi" sadece bir pastane değil, aynı zamanda lezzetin, ustalığın ve paylaşmanın merkezi. Her bir dilimimizde, sıcaklığını ve samimiyetini hissedin.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="about__bar">
                         <div class="about__bar__item">
-                            <p>Cake design</p>
+                            <p>Pasta Tasarımı</p>
                             <div id="bar1" class="barfiller">
                                 <div class="tipWrap"><span class="tip"></span></div>
                                 <span class="fill" data-percentage="95"></span>
                             </div>
                         </div>
                         <div class="about__bar__item">
-                            <p>Cake Class</p>
+                            <p>Pasta Sınıfı</p>
                             <div id="bar2" class="barfiller">
                                 <div class="tipWrap"><span class="tip"></span></div>
                                 <span class="fill" data-percentage="80"></span>
                             </div>
                         </div>
                         <div class="about__bar__item">
-                            <p>Cake Recipes</p>
+                            <p>Pasta Tarifleri</p>
                             <div id="bar3" class="barfiller">
                                 <div class="tipWrap"><span class="tip"></span></div>
                                 <span class="fill" data-percentage="90"></span>
@@ -154,7 +154,7 @@
                     <?php foreach ($products as $pro) { ?>
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <a href="<?php echo base_url('pages/product_details/'.$pro->urun_sef); ?>">
+                                <a href="<?php echo base_url('products/'.$pro->urun_sef); ?>">
                                     <div class="product__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/shop/'.$pro->urun_resim); ?>";">
                                         <div class="product__label">
                                             <span><?php echo $pro->urun_kategori; ?></span>
@@ -162,7 +162,7 @@
                                     </div>
                                 </a>
                                 <div class="product__item__text">
-                                    <h6><a href="<?php echo base_url('pages/product_details/'.$pro->urun_sef); ?>"><?php echo $pro->urun_adi; ?></a></h6>
+                                    <h6><a href="<?php echo base_url('products/'.$pro->urun_sef); ?>"><?php echo $pro->urun_adi; ?></a></h6>
                                     <div class="product__item__price"><?php echo $pro->urun_fiyat ?>₺</div>
                                     <div class="cart_add">
                                         <a href="#">Sepete Ekle</a>
@@ -199,8 +199,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <span>Testimonial</span>
-                        <h2>Our client say</h2>
+                        <span>Kalpten Yorumlar</span>
+                        <h2>Müşterilerimiz diyor ki</h2>
                     </div>
                 </div>
             </div>
@@ -255,8 +255,8 @@
                 <div class="col-lg-4 p-0">
                     <div class="instagram__text">
                         <div class="section-title">
-                            <span>Follow us on instagram</span>
-                            <h2>Sweet moments are saved as memories.</h2>
+                            <span>Bizi Instagram'dan Takip Edin</span>
+                            <h2>Tatlı anlar hatıra olarak saklanır.</h2>
                         </div>
                         <h5><img src="<?php echo base_url('default/uploads/img/cake-piece.png'); ?>" alt="">&nbsp;<i class="fa fa-instagram"></i>@sweetcake</h5>
                     </div>

@@ -4,11 +4,11 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="footer__widget">
-                    <h6>WORKING HOURS</h6>
+                    <h6>ÇALIŞMA SAATLERİ</h6>
                     <ul>
-                        <li>Monday - Friday: 08:00 am – 08:30 pm</li>
-                        <li>Saturday: 10:00 am – 16:30 pm</li>
-                        <li>Sunday: 10:00 am – 16:30 pm</li>
+                        <li>Pazartesi - Cuma: 08:00 – 20:30</li>
+                        <li>Cumartesi: 10:00 – 16:30</li>
+                        <li>Pazar: 10:00 – 16:30</li>
                     </ul>
                 </div>
             </div>
@@ -40,8 +40,8 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="footer__newslatter">
-                    <h6>Subscribe</h6>
-                    <p>Get latest updates and offers.</p>
+                    <h6>Bültene Kayıt Olun</h6>
+                    <p>En son güncellemeleri ve teklifleri alın.</p>
                     <form action="#">
                         <input type="text" placeholder="Email">
                         <button type="submit"><i class="fa fa-send-o"></i></button>
@@ -67,7 +67,7 @@
                         <ul>
 
                             <?php foreach ($pages as $page){ ?>
-                                <li><a href="<?php echo base_url('pages/detail/'.$page->sayfasef); ?>"><?php echo $page->sayfaadi; ?></a></li>
+                                <li><a href="<?php echo base_url('page/'.$page->sayfasef); ?>"><?php echo $page->sayfaadi; ?></a></li>
                             <?php } ?>
 
 <!--                            <li><a href="#">Privacy Policy</a></li>-->

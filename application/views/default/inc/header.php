@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="<?php echo base_url();?>default/assets/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url();?>default/assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url();?>default/assets/sweetalert/sweetalert2.css">
-<!--DOMAINDEN SONRA KONTROL ET    <link rel="icon" href="--><?php //echo base_url('default/uploads/img/icon/'.$setting->site_favicon);?><!--" />-->
-<!--DOMAINDEN SONRA KONTROL ET    <link rel="icon" href="--><?php //echo base_url('default/uploads/img/icon/'.$setting->site_favicon);?><!--">-->
+<!--    <link rel="icon" type="image/png" sizes="16x16" href="default/uploads/img/icon/favicon.png" type="image/x-icon">-->
+<!--    <link rel="icon" type="image/png" sizes="16x16" href="--><?php //echo base_url('default/uploads/img/icon/favicon.png'); ?><!--">-->
 </head>
 
 <body>
@@ -47,7 +47,7 @@
         </div>
         <div class="offcanvas__cart__item">
             <a href="<?php echo base_url('pages/shoping_cart'); ?>"><img src="<?php echo base_url('default/uploads/img/icon/cart.png');?>" alt=""> <span>0</span></a>
-            <div class="cart__price">Cart: <span>$0.00</span></div>
+            <div class="cart__price">Sepet: <span>0.00₺</span></div>
         </div>
     </div>
     <div class="offcanvas__logo">
@@ -86,7 +86,7 @@
                             </div>
                             <div class="header__top__right__cart">
                                 <a href="<?php echo base_url('pages/shoping_cart'); ?>"><img src="<?php echo base_url('default/uploads/img/icon/cart.png');?>" alt=""> <span>0</span></a>
-                                <div class="cart__price">Cart: <span>$0.00</span></div>
+                                <div class="cart__price">Sepet: <span>0.00₺</span></div>
                             </div>
                         </div>
                     </div>
@@ -107,18 +107,18 @@
                         ?>
                         <li class="<?php if ($current_path == '/') echo 'active'; ?>"><a href="<?php echo base_url(); ?>">Anasayfa</a></li>
                         <li class="<?php if ($current_path == '/pages/about') echo 'active'; ?>"><a href="<?php echo base_url('pages/about'); ?>">Hakkımızda</a></li>
-                        <li class="<?php if (strpos($current_path, '/pages/shop') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/shop'); ?>">Ürünlerimiz</a></li>
+                        <li class="<?php if (strpos($current_path, 'products') !== false) echo 'active'; ?>"><a href="<?php echo base_url('products'); ?>">Ürünlerimiz</a></li>
                         <li class="<?php if (strpos($current_path, '/pages/shoping_cart') !== false || strpos($current_path, '/pages/checkout') !== false || strpos($current_path, '/pages/wishlist') !== false || strpos($current_path, '/pages/courses') !== false || strpos($current_path, '/pages/blog_details') !== false) echo 'active'; ?>">
-                            <a href="#">Pages</a>
+                            <a href="#">Sayfalar</a>
                             <ul class="dropdown">
-                                <li class="<?php if (strpos($current_path, '/pages/shoping_cart') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/shoping_cart'); ?>">Shoping Cart</a></li>
+                                <li class="<?php if (strpos($current_path, '/pages/shoping_cart') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/shoping_cart'); ?>">Sepet</a></li>
                                 <li class="<?php if (strpos($current_path, '/pages/checkout') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/checkout'); ?>">Kontrol</a></li>
                                 <li class="<?php if (strpos($current_path, '/pages/wishlist') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/wishlist'); ?>">İstek Listesi</a></li>
                                 <li class="<?php if (strpos($current_path, '/pages/courses') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/courses'); ?>">Kurslar</a></li>
-                                <li class="<?php if (strpos($current_path, '/pages/blog_details') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/blog_details'); ?>">Blog detail</a></li>
+                                <li class="<?php if (strpos($current_path, '/blog/blog_details') !== false) echo 'active'; ?>"><a href="<?php echo base_url('blog/blog_details'); ?>">Blog detay</a></li>
                             </ul>
                         </li>
-                        <li class="<?php if (strpos($current_path, '/pages/blog') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/blog'); ?>">Blog</a></li>
+                        <li class="<?php if (strpos($current_path, '/blog') !== false) echo 'active'; ?>"><a href="<?php echo base_url('blog'); ?>">Blog</a></li>
                         <li class="<?php if (strpos($current_path, '/pages/contact') !== false) echo 'active'; ?>"><a href="<?php echo base_url('pages/contact'); ?>">İletişim</a></li>
                     </ul>
                 </nav>

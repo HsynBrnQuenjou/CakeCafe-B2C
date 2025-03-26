@@ -1543,6 +1543,26 @@ ol {
   color: #888888;
 }
 
+.pagination .page-item.active .page-link {
+  background-color: #000; /* Aktif sayfa arka plan rengi: siyah */
+  color: #fff; /* Aktif sayfa yazı rengi: beyaz */
+  border-color: #000; /* Aktif sayfa çerçeve rengi: siyah */
+}
+
+.pagination .page-link {
+  color: #007bff; /* Diğer sayfaların yazı rengi: mavi (Bootstrap'in varsayılanı) */
+}
+
+.pagination .page-link:hover {
+  color: #0056b3; /* Diğer sayfaların yazı rengi (hover): daha koyu mavi */
+  background-color: #e9ecef; /* Sayfa arka plan rengi (hover): açık gri */
+}
+
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  border-radius: .25rem; /* Köşeleri yuvarlat */
+}
+
 .shop__pagination a {
   display: inline-block;
   color: #000000;
@@ -1573,6 +1593,7 @@ ol {
   color: #000000;
   text-align: right;
 }
+
 
 /*---------------------
   Product Details

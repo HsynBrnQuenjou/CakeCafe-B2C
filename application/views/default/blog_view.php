@@ -64,7 +64,7 @@
                         <div class="blog__item__text">
                             <h2><?php echo $blog->blogbaslik ?></h2>
                             <p><?php echo $blog->blogkisa ?></p>
-                            <a href="<?php echo base_url($blog->blogsef); ?>">DEVAMINI OKU</a>
+                            <a href="<?php echo base_url('/blog/blog_details/'.$blog->blogsef); ?>">DEVAMINI OKU</a>
                         </div>
                     </div>
                 <?php } ?>
@@ -75,6 +75,7 @@
                         <a href="#">3</a>
                         <a href="#"><span class="arrow_carrot-right"></span></a>
                     </div>
+
                 </div>
                 <div class="col-lg-4">
                     <div class="blog__sidebar">
@@ -85,7 +86,7 @@
                             </form>
                         </div>
                         <div class="blog__sidebar__item">
-                            <h5>Follow me</h5>
+                            <h5>Bizi Takip Edin</h5>
                             <div class="blog__sidebar__social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -95,7 +96,7 @@
                         </div>
 
                         <div class="blog__sidebar__item">
-                            <h5>Popular posts</h5>
+                            <h5>Popüler Bloglarımız</h5>
 
                             <div class="blog__sidebar__recent">
                                 <?php foreach ($popularblogs as $popblogs){ ?>
@@ -106,6 +107,8 @@
                                     <div class="blog__sidebar__recent__item__text">
                                         <h4><?php echo $popblogs->blogbaslik ?></h4>
                                         <span><?php echo $popblogs->blogtarih?></span>
+                                        <span> | </span>
+                                        <span><?php echo $popblogs->bloggoruntulenme?> Görüntülenme</span>
                                     </div>
                                 </a>
                                 <?php } ?>
@@ -114,7 +117,7 @@
                         </div>
 
                         <div class="blog__sidebar__item">
-                            <h5>Categories</h5>
+                            <h5>Kategoriler</h5>
                             <div class="blog__sidebar__item__categories">
                                 <ul>
                                     <li><a href="#">Repice <span>36</span></a></li>
@@ -126,16 +129,16 @@
                             </div>
                         </div>
                         <div class="blog__sidebar__item">
-                            <h5>NEWsLETTeR</h5>
-                            <p>Subscribe to our newsletter and get our newest updates right on your inbox.</p>
+                            <h5>Haber Bülteni</h5>
+                            <p>Bültenimize abone olun ve en son güncellemelerimizi doğrudan e-posta kutunuza alın.</p>
                             <form action="#">
                                 <input type="text" placeholder="Your email">
                                 <label for="agg">
-                                    I agree to the terms & conditions
+                                    Şartlar ve koşulları kabul ediyorum
                                     <input type="checkbox" id="agg">
                                     <span class="checkmark"></span>
                                 </label>
-                                <button type="submit" class="site-btn">Subscribe</button>
+                                <button type="submit" class="site-btn">Abone Olun</button>
                             </form>
                         </div>
                     </div>
@@ -149,3 +152,4 @@
 
 
 <?php $this->load->view('default/inc/footer'); ?>
+

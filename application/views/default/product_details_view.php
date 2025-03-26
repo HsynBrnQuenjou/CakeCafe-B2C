@@ -8,13 +8,13 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="breadcrumb__text">
-                        <h2>Product details</h2>
+                        <h2>Ürün Detay</h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="breadcrumb__links">
                         <a href="home_view.php">Home</a>
-                        <a href="shop_view.php">Shop</a>
+                        <a href="products_view.php">Shop</a>
                         <span><?php echo $product->urun_adi; ?></span>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <h2>Related Products</h2>
+                        <h2>İlgili Ürünler</h2>
                     </div>
                 </div>
             </div>
@@ -185,7 +185,7 @@
                     <?php foreach ($products as $catpro) { ?>
                         <div class="col-lg-3">
                             <div class="product__item">
-                                <a href="<?php echo base_url('pages/product_details/'.$catpro->urun_sef); ?>">
+                                <a href="<?php echo base_url('products/'.$catpro->urun_sef); ?>">
                                     <div class="product__item__pic set-bg" data-setbg="<?php echo base_url('default/uploads/img/shop/'.$catpro->urun_resim); ?>">
                                         <div class="product__label">
                                             <span><?php echo $catpro->urun_kategori; ?></span>
@@ -193,7 +193,7 @@
                                     </div>
                                 </a>
                                 <div class="product__item__text">
-                                    <h6><a href="<?php echo base_url('pages/product_details/'.$catpro->urun_sef); ?>"><?php echo $catpro->urun_adi; ?></a></h6>
+                                    <h6><a href="<?php echo base_url('products/'.$catpro->urun_sef); ?>"><?php echo $catpro->urun_adi; ?></a></h6>
                                     <div class="product__item__price"><?php echo $catpro->urun_fiyat; ?>₺</div>
                                     <div class="cart_add">
                                         <a href="#">Sepete Ekle</a>

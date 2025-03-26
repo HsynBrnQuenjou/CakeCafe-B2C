@@ -45,31 +45,31 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="about__text">
                         <div class="section-title">
-                            <span>About Cake shop</span>
-                            <h2>Cakes and bakes from the house of Queens!</h2>
+                            <span>Pastanemiz</span>
+                            <h2>Lezzetin ve Ustalığın Buluşma Noktası!</h2>
                         </div>
-                        <p>The "Cake Shop" is a Jordanian Brand that started as a small family business. The owners are
-                        Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff of 80 employees.</p>
+                        <p>Geleneksel tarifleri modern lezzetlerle birleştirerek, damaklarda unutulmaz tatlar bırakıyoruz.
+                            "Tatlı Anların Adresi" sadece bir pastane değil, aynı zamanda lezzetin, ustalığın ve paylaşmanın merkezi. Her bir dilimimizde, sıcaklığını ve samimiyetini hissedin.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="about__bar">
                         <div class="about__bar__item">
-                            <p>Cake design</p>
+                            <p>Pasta Tasarımı</p>
                             <div id="bar1" class="barfiller">
                                 <div class="tipWrap"><span class="tip"></span></div>
                                 <span class="fill" data-percentage="95"></span>
                             </div>
                         </div>
                         <div class="about__bar__item">
-                            <p>Cake Class</p>
+                            <p>Pasta Sınıfı</p>
                             <div id="bar2" class="barfiller">
                                 <div class="tipWrap"><span class="tip"></span></div>
                                 <span class="fill" data-percentage="80"></span>
                             </div>
                         </div>
                         <div class="about__bar__item">
-                            <p>Cake Recipes</p>
+                            <p>Pasta Tarifleri</p>
                             <div id="bar3" class="barfiller">
                                 <div class="tipWrap"><span class="tip"></span></div>
                                 <span class="fill" data-percentage="90"></span>
@@ -91,8 +91,8 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="section-title">
-                            <span>Testimonial</span>
-                            <h2>Our client say</h2>
+                            <span>Kalpten Yorumlar</span>
+                            <h2>Müşterilerimiz diyor ki</h2>
                         </div>
                     </div>
                 </div>
@@ -146,13 +146,13 @@
             <div class="row">
                 <div class="col-lg-7 col-md-7 col-sm-7">
                     <div class="section-title">
-                        <span>Our team</span>
-                        <h2>Sweet Baker </h2>
+                        <span>Ekibimiz</span>
+                        <h2>Lezzet Yaratıcılarımız</h2>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-5">
                     <div class="team__btn">
-                        <a href="#" class="primary-btn">Join Us</a>
+                        <a href="#" class="primary-btn">Bize Katılın</a>
                     </div>
                 </div>
             </div>
